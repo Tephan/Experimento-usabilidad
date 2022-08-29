@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <script src="js/jquery.js"></script>
+
+    <title>Seleccionar proyecto</title>
+    
+    <!-- Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+  </head>
+
+  <body>
+    <div class="page">
+      <!--========================================================
+                                HEADER
+      =========================================================-->
+      <header id="header">
+      </header>
+      <!--========================================================
+                                CONTENT
+      =========================================================-->   
+      <div class="container modal-dialog" style="background-image:url(images/fav.jpg)">
+        <div class="main-section wrap_17">
+          <div class="caja modal-content grid_3">
+            <div class="caja_1 user-img">
+              <img src="images/logo.png">
+            </div>
+            <div class="caja_1">
+              <form id="inputs">
+                <br>
+                <div id="descripcion">
+                  <p>Escribe el nombre del proyecto</p>
+                </div>
+                <div id="proyecto">
+                  <input type="text" id="input-proyecto" placeholder="Proyecto">
+                </div>
+                <br>
+                <div id="div-btn">
+                  <input type="Button" id="btnVerificar" class="botones" value="Aceptar" onclick="check()"> 
+                </div>
+                <br>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+      <!--========================================================
+                                FOOTER
+      =========================================================-->
+      <footer id="footer" class="color_9">
+          <div class="container">
+              <div class="row">
+                  <div class="grid_12">
+                      <p class="info text_4 color_4">
+                          © <span id="copyright-year"></span> | ALBA DTI
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <script src="js/app.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/run.js"></script>
+  </body>
+  
+</html>

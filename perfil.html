@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pérfil</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/camera.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!--[if lt IE 9]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+
+    <!-- Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+</head>
+<body>
+<div class="page">
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="brand put-left">
+                        <h1>
+                            <a href="menu.html">
+                                <img src="images/logo.png" alt="Logo"/>
+                            </a>
+                        </h1>
+                    </div>
+                    <nav class="nav put-right">
+                        <ul class="sf-menu">
+                            <li><a href="menu.html">Menú</a></li>
+                            <li class="current"><a href="perfil.html">Test</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+
+<div class="bg_1 wrap_2 wrap_4">
+    <div class="container">
+        <div class="row">
+            <div class="preffix_2 grid_8">
+                <h2 class="header_1 wrap_3 color_3">
+                    Test de prueba
+                </h2>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p class="text_3">
+            
+        </p>
+        <br>
+        <div class="row">
+            <div class="grid_12">
+                <div class="box">
+                    <div name="contenido1" id="formulario1"> 
+                        <p class="text_3">
+                            <p class="labeln">1. Nombre personal</p>
+                            <p class="labeln">Nombre(s):</p>
+                            <p class="labeln">
+                                <input type="text" id="r1" name="nom1" class="tex" style="WIDTH: 250px; HEIGHT: 15px" ><br/>    
+                            </p>
+                            <p class="labeln">Apellido Paterno:</p>
+                            <p class="labeln">
+                                <input type="text" id="r2" name="nom2" class="tex" style="WIDTH: 250px; HEIGHT: 15px" ><br/>    
+                            </p>
+                            <p class="labeln">Apellido Materno:</p>
+                            <p class="labeln">
+                                <input type="text" id="r3" name="nom3" class="tex" style="WIDTH: 250px; HEIGHT: 15px" ><br/>    
+                            </p>
+                        </p>
+                        <br>
+                        <p class="text_3">
+                            <p class="labeln">2. ¿A qué se dedica?</p>
+                            <p class="labeln">
+                                <select id="r4" name="nom4" class="sel">
+                                    <option value="">Seleccione una opción</option>
+                                    <option value="Comerciante">Comerciante</option>
+                                    <option value="Contratista">Contratista</option>
+                                    <option value="Empleado">Empleado</option>
+                                    <option value="Estudiante">Estudiante</option>
+                                    <option value="Ama de casa">Ama de casa</option>
+                                </select>    
+                            </p>
+                        </p>
+                        <br>
+                        <p class="text_3">
+                            <p class="labeln">3. ¿Qué experiencia tiene en Internet?</p>
+                            <p class="labeln"> 
+                                <select id="r5" name="nom5" class="sel">
+                                    <option value="">Seleccione una opción</option>
+                                    <option value="Ninguna">Ninguna</option>
+                                    <option value="Poca">Poca</option>
+                                    <option value="Mucha">Mucha</option>
+                                </select>
+                            </p>
+                        </p>
+                        <br>
+                        <p class="text_3">
+                            <p class="labeln">4. Navegación en la WEB</p>    
+                            <p class="labeln">¿Navega habitualmente?</p>
+                            <div id="Contenedor" name="Contenedor" class="pay">
+            
+                                <div id="div_1" class="floatBlock">
+                                    <label for="radio_1"> <input id="radio1" name="nom6" type="radio" value="Si" class="rad"/>  SÍ  </label>
+                                </div>
+            
+                                <div id="div_2" class="floatBlock">
+                                    <label for="radio_2"> <input id="radio2" name="nom6" type="radio" value="No" class="rad" /> No </label>
+                                </div>
+                            </div>
+                            <br>
+                            <p class="labeln">¿Cuantas horas navega al día?</p>
+                            <p class="labeln">
+                                <select id="r7" name="nom7" class="sel">
+                                    <option value="">Seleccione una opción</option>
+                                    <option value="Menos de una hora">Menos de una hora</option>
+                                    <option value="Entre una y cinco horas">Entre una y cinco horas</option>
+                                    <option value="Entre cinco y ocho horas">Entre cinco y ocho horas</option>
+                                    <option value="Más de ocho horas">Más de ocho horas</option>
+                                </select>
+                            </p>
+                            <p class="labeln">¿Cuantas horas navega a la semana?</p>
+                            <p class="labeln">
+                                <select id="r8" name="nom8" class="sel">
+                                    <option value="">Seleccione una opción</option>
+                                    <option value="Menos de veinte horas">Menos de veinte horas</option>
+                                    <option value="Entre veinte y cincuenta horas">Entre veinte y cincuenta horas</option>
+                                    <option value="Entre cincuenta y ochenta horas">Entre cincuenta y ochenta horas</option>
+                                    <option value="Más de ochenta horas">Más de ochenta horas</option>
+                                </select>    
+                            </p>
+                        </p>
+                        <br>
+                    </div>
+                    <div name="contenido2" id="formulario2">
+                        <p class="text_3">
+                            <p class="labeln">5. ¿Qué sitios visita habitualmente?</p>
+                            <p class="labeln">
+                                <textarea id="r9" name="nom9" class="tex" rows="5" cols="50"></textarea><br/> 
+                            </p>
+                        </p>
+                        <br>
+                        <p class="text_3">
+                            <p class="labeln">6. ¿Cuáles son sus sitios preferidos? </p>
+                            <p class="labeln">
+                                <textarea id="r10" name="nom10" class="tex" rows="5" cols="50"></textarea><br/> 
+                            </p>
+                        </p>
+                        <br>
+                        <p class="text_3">
+                            <p class="labeln">7. Busquedas en la WEB</p>    
+                            <p class="labeln">Cuando busca algo en Internet ¿cómo llega a un sitio<br> que pueda tener esa información? </p>
+                            <p class="labeln">
+                                <textarea id="r11" name="nom11" class="tex" rows="5" cols="50"></textarea><br/>  
+                            </p>
+                            <p class="labeln">¿Usa algún Buscador? </p>
+                            <div id="Contenedor" name="Contenedor" class="pay">
+            
+                                <div id="div_1" class="floatBlock">
+                                    <label for="radio_1"> <input id="radio2" name="nom12" type="radio" value="Si" class="rad"/>  SÍ  </label>
+                                </div>
+                
+                                <div id="div_2" class="floatBlock">
+                                    <label for="radio_2"> <input id="radio3" name="nom12" type="radio" value="No" class="rad" /> No </label>
+                                </div>
+                            </div>
+                        </p>
+                            <p class="labeln">¿Cuál? </p>
+                                <p class="labeln">
+                                        <input type="text" id="r13" name="nom13" class="tex" style="WIDTH: 250px; HEIGHT: 15px" ><br/>    
+                                </p>
+                            </p>
+                            <p class="labeln">Si no usa un buscador ¿Cómo lo hace? </p>
+                                <p class="labeln">
+                                        <textarea id="r14" name="nom14" class="tex" rows="5" cols="50"></textarea><br/>    
+                                </p>
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                    </div>    
+                </div>
+            </div>
+            <br>
+            </div>
+        </div>
+        <input type="Button" id="btnGuardar" class="botones" value="Guardar" onclick="procesar(5)"> 
+    </div>
+</div>
+</section>
+</div>
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer" class="color_9">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <p class="info text_4 color_4">
+                    © <span id="copyright-year"></span> | ALBA DTI
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+<script src="js/almacenar.js"></script>
+<script src="js/run.js"></script>
+<!--<script src="js/auth.js"></script>-->
+</body>
+</html>

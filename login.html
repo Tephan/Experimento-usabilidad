@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <script src="js/jquery.js"></script>
+
+    <title>Iniciar sessión</title>
+    
+    <!-- Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+  </head>
+
+  <body>
+    <div class="page">
+      <!--========================================================
+                                HEADER
+      =========================================================-->
+      <header id="header">
+      </header>
+      <!--========================================================
+                                CONTENT
+      =========================================================-->   
+      <div class="container modal-dialog" style="background-image:url(images/fondo.jpg)">
+        <div class="main-section wrap_17">
+          <div class="caja modal-content grid_3">
+            <div class="caja_1 user-img">
+              <img src="images/logo.png">
+            </div>
+            <div class="caja_1">
+              <form id="inputs">
+                <div id="nombre">
+                  <input type="email" id="input-email" placeholder="Correo">
+                </div>
+                <div id="contrasena">
+                  <input type="password" id="input-contrasena" placeholder="Contraseña">
+                </div>
+                <div id="div-btn" class="caja_1 indent_1">
+                  <input type="Button" id="btnIngresar" class="botones" value="Ingresar" onclick="autenticar()"> 
+                </div>
+                <br>
+                <div id="div-cuenta color_3 ">
+                  <a href="registro.html" class="linki">Olvide mi contraseña</a></br>  
+                  <a href="registro.html" class="linki">Crear nueva cuenta</a>
+                </div>
+                <div id="contenido">
+                  
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+      <!--========================================================
+                                FOOTER
+      =========================================================-->
+      <footer id="footer" class="color_9">
+          <div class="container">
+              <div class="row">
+                  <div class="grid_12">
+                      <p class="info text_4 color_4">
+                          © <span id="copyright-year"></span> | ALBA DTI
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <script src="js/app.js"></script>
+      <script src="js/auth.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/clean.js"></script>
+  </body>
+  
+</html>

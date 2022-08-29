@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>NASA-TLX</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/camera.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!--[if lt IE 9]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+
+    <!-- Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+</head>
+<body>
+<div class="page">
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="brand put-left">
+                        <h1>
+                            <a href="menu.html">
+                                <img src="images/logo.png" alt="Logo"/>
+                            </a>
+                        </h1>
+                    </div>
+                    <nav class="nav put-right">
+                        <ul class="sf-menu">
+                            <li><a href="menu.html">Menú</a></li>
+                            <li class="current"><a href="nasa.html">NASA-TLX</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+
+<div class="bg_1 wrap_2 wrap_4">
+    <div class="container">
+        <div class="row">
+            <div class="preffix_2 grid_8">
+                <h2 class="header_1 wrap_3 color_3">
+                    Método de evaluación NASA-TLX
+                </h2>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p class="text_3">
+            Por favor, califique su satisfacción con el sistema.
+        </p>
+        <br>
+        <div class="row">
+            <div class="grid_12">
+                <div class="box_1">
+                    <form name="radios" id="formulario">
+                            <p class="text_3">
+                                    <p class="labelp">1. Exigencia mental</p>
+                                    <p class="labeln">¿Cuánta actividad mental y perceptiva fue necesaria? (Por ejemplo: pensar, decidir, calcular, recordar, buscar, investigar, etc.)</p>
+                                    <div id="Contenedor_1" name="Contenedor_1" class="pay">
+                                        <div class="py">
+                                            <label>Baja</label>
+                                        </div>
+                                        <div class="py">
+                                            <input type="range" id="r1" name="nom1" min="1" max="5" class="rng">    
+                                        </div>
+                                        <div class="py">
+                                            <label>Alta</label>    
+                                        </div>
+                                    </div>
+                                    <p class="labeln">¿Se trata de una tarea fácil o difícil, simple o compleja, pesada o ligera?</p>
+                                    <div id="Contenedor_2" name="Contenedor_2" class="pay">
+                                        <div class="py">
+                                            <label>Baja</label>
+                                        </div>
+                                        <div class="py">
+                                            <input type="range" id="r2" name="nom2" min="1" max="5" class="rng">    
+                                        </div>
+                                        <div class="py">
+                                            <label>Alta</label>    
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+
+                                    <p class="labelp">2. Exigencia física</p>
+                                    <p class="labeln">¿Cuánta actividad física fue necesaria? (Por ejemplo: empujar, tirar, girar, pulsar, accionar, etc.)</p>
+                                    <div id="Contenedor_3" name="Contenedor_3" class="pay">
+                                        <div class="py">
+                                            <label>Baja</label>
+                                        </div>
+                                        <div class="py">
+                                            <input type="range" id="r3" name="nom3" min="1" max="5" class="rng">    
+                                        </div>
+                                        <div class="py">
+                                            <label>Alta</label>    
+                                        </div>
+                                    </div>
+                                    <p class="labeln">¿Cuánta presión de tiempo sintió, debido al ritmo en el que sucedían las tareas o los elementos de las tareas?</p>
+                                    <div id="Contenedor_4" name="Contenedor_4" class="pay">
+                                        <div class="py">
+                                            <label>Baja</label>
+                                        </div>
+                                        <div class="py">
+                                            <input type="range" id="r4" name="nom4" min="1" max="5" class="rng">    
+                                        </div>
+                                        <div class="py">
+                                            <label>Alta</label>    
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+
+                                    <p class="labelp">3. Exigencia temporal</p>
+                                    <p class="labeln">¿Cuánta presión de tiempo sintió, debido al ritmo en el que sucedían las tareas o los elementos de las tareas?</p>
+                                    <div id="Contenedor_5" name="Contenedor_5" class="pay">
+                                        <div class="py">
+                                            <label>Baja</label>
+                                        </div>
+                                        <div class="py">
+                                            <input type="range" id="r5" name="nom5" min="1" max="5" class="rng">    
+                                        </div>
+                                        <div class="py">
+                                            <label>Alta</label>    
+                                        </div>
+                                    </div>
+                                    <p class="labeln">¿Era el ritmo lento y pausado o rápido y frenético?</p>
+                                    <div id="Contenedor_6" name="Contenedor_6" class="pay">
+                                        <div class="py">
+                                            <label>Baja</label>
+                                        </div>
+                                        <div class="py">
+                                            <input type="range" id="r6" name="nom6" min="1" max="5" class="rng">    
+                                        </div>
+                                        <div class="py">
+                                            <label>Alta</label>    
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+
+                                    <p class="labelp">4. Esfuerzo</p>
+                                    <p class="labeln">¿En qué medida ha tenido que trabajar (física o mental mente) para alcanzar su nivel de resultados?</p>
+                                    <div id="Contenedor_7" name="Contenedor_7" class="pay">
+                                        <div class="py">
+                                            <label>Baja</label>
+                                        </div>
+                                        <div class="py">
+                                            <input type="range" id="r7" name="nom7" min="1" max="5" class="rng">    
+                                        </div>
+                                        <div class="py">
+                                            <label>Alta</label>    
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+
+                                    <p class="labelp">5. Rendimiento</p>
+                                    <p class="labeln">¿Hasta qué punto cree que ha tenido éxito en los objetivos establecidos por el investigador (o por usted mismo(a))?</p>
+                                    <div id="Contenedor_8" name="Contenedor_8" class="pay">
+                                        <div class="py">
+                                            <label>Buena</label>
+                                        </div>
+                                        <div class="py">
+                                            <input type="range" id="r8" name="nom8" min="1" max="5" class="rng">    
+                                        </div>
+                                        <div class="py">
+                                            <label>Mala</label>    
+                                        </div>
+                                    </div>
+                                    <p class="labeln">¿Cuál es su grado de satisfacción con su nivel de ejecución?</p>
+                                    <div id="Contenedor_9" name="Contenedor_9" class="pay">
+                                        <div class="py">
+                                            <label>Buena</label>
+                                        </div>
+                                        <div class="py">
+                                            <input type="range" id="r9" name="nom9" min="1" max="5" class="rng">    
+                                        </div>
+                                        <div class="py">
+                                            <label>Mala</label>    
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+
+                                    <p class="labelp">6. Nivel de frustración</p>
+                                    <p class="labeln">¿Durante la tarea, en qué medida se ha sentido inseguro(a), desalentado(a), irritado(a), tenso(a) o preocupado(a) o, por el contrario, se ha sentido seguro(a), contento(a), relajado(a) y satisfecho(a)?</p>
+                                    <div id="Contenedor_10" name="Contenedor_10" class="pay">
+                                        <div class="py">
+                                            <label>Baja</label>
+                                        </div>
+                                        <div class="py">
+                                            <input type="range" id="r10" name="nom10" min="1" max="5" class="rng">    
+                                        </div>
+                                        <div class="py">
+                                            <label>Alta</label>    
+                                        </div>
+                                    </div>
+                                </p>
+                            </form>    
+                        </div>
+                    </p>
+                </div>
+            <br>
+            </div>
+        </div>
+        <input type="Button" id="btnGuardar" class="botones" value="Guardar" onclick="procesar(7)"> 
+    </div>
+</div>
+
+</section>
+</div>
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer" class="color_9">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <p class="info text_4 color_4">
+                    © <span id="copyright-year"></span> | ALBA DTI
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+<script src="js/almacenar.js"></script>
+<script src="js/run.js"></script>
+</body>
+</html>

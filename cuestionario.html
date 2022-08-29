@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SUS</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <!--<![endif]-->
+    <script src="js/camera.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <!--[if lt IE 9]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+
+    <!-- Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
+</head>
+<body>
+<div class="page">
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div id="stuck_container">
+        <div class="container">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="brand put-left">
+                        <h1>
+                            <a href="menu.html">
+                                <img src="images/logo.png" alt="Logo"/>
+                            </a>
+                        </h1>
+                    </div>
+                    <nav class="nav put-right">
+                        <ul class="sf-menu">
+                            <li><a href="menu.html">Menú</a></li>
+                           <li class="current"><a href="cuestionario.html">Cuestionario</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--========================================================
+                          CONTENT
+=========================================================-->
+
+<div class="bg_1 wrap_2 wrap_4">
+    <div class="container">
+        <div class="row">
+            <div class="preffix_2 grid_8">
+                <h2 class="header_1 wrap_3 color_3">
+                    Método de evaluación
+                </h2>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p class="text_3">
+            1. Como te sentiste durante la actividad realizada:
+        </p>
+        <br>
+        <br>
+        <div class="row">
+            <div class="grid_12">
+                <div class="box_1">
+                    <form name="radios" id="formulario">
+                            <p class="text_3">
+                                    <div id="tabla">
+                                        <div class="Block2"></div>
+                                        <div class="Block">Totalmente en desacuerdo</div>
+                                        <div class="Block">En desacuerdo</div>
+                                        <div class="Block">Indeciso</div>
+                                        <div class="Block">De acuerdo</div>
+                                        <div class="Block">Totalmente de acuerdo</div>
+                                    </div>
+
+                                    <div class="marco">
+                                        <p class="labelc">Enojado</p>
+                                    <div id="Contenedor_1" name="Contenedor_1" class="pay contenedor">
+            
+                                        <div id="div_1" class="floatBlock2">
+                                            <label for="r1"> <input id="radio1" name="nom1" type="radio" value="Totalmente en desacuerdo" class="rad" /></label>
+                                        </div> 
+            
+                                        <div id="div_2" class="floatBlock2">
+                                            <label for="r1"> <input id="radio2" name="nom1" type="radio" value="En desacuerdo" class="rad" /></label>
+                                        </div>
+
+                                        <div id="div_3" class="floatBlock2">
+                                            <label for="radio_3"> <input id="radio3" name="nom1" type="radio" value="Indeciso" class="rad"/></label>
+                                        </div>
+
+                                        <div id="div_4" class="floatBlock2">
+                                            <label for="radio_4"> <input id="radio4" name="nom1" type="radio" value="De acuerdo" class="rad" /></label>
+                                        </div>
+
+                                        <div id="div_5" class="floatBlock2">
+                                            <label for="radio_5"> <input id="radio5" name="nom1" type="radio" value="Totalmente de acuerdo" class="rad" /></label>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    
+                                    <div class="marco">
+                                        <p class="labelc">Decepcionado</p>
+                                        <div id="Contenedor_2" name="Contenedor_2" class="pay contenedor">
+            
+                                            <div id="div_1" class="floatBlock2">
+                                                <label for="radio_1"> <input id="radio6" name="nom2" type="radio" value="Totalmente en desacuerdo" class="rad"/></label>
+                                            </div>
+            
+                                            <div id="div_2" class="floatBlock2">
+                                                <label for="radio_2"> <input id="radio7" name="nom2" type="radio" value="En desacuerdo" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_3" class="floatBlock2">
+                                                <label for="radio_3"> <input id="radio8" name="nom2" type="radio" value="Indeciso" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_4" class="floatBlock2">
+                                                <label for="radio_4"> <input id="radio9" name="nom2" type="radio" value="De acuerdo" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_5" class="floatBlock2">
+                                                <label for="radio_5"> <input id="radio10" name="nom2" type="radio" value="Totalmente de acuerdo" class="rad"/></label>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                    
+
+                                    <div class="marco">
+                                        <p class="labelc">Frustrado</p>
+                                        <div id="Contenedor_3" name="Contenedor_3" class="pay contenedor">
+            
+                                            <div id="div_1" class="floatBlock2">
+                                                <label for="radio_1"> <input id="radio11" name="nom3" type="radio" value="Totalmente en desacuerdo" class="rad"/></label>
+                                            </div>
+            
+                                            <div id="div_2" class="floatBlock2">
+                                                <label for="radio_2"> <input id="radio12" name="nom3" type="radio" value="En desacuerdo" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_3" class="floatBlock2">
+                                                <label for="radio_3"> <input id="radio13" name="nom3" type="radio" value="Indeciso" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_4" class="floatBlock2">
+                                                <label for="radio_4"> <input id="radio14" name="nom3" type="radio" value="De acuerdo" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_5" class="floatBlock2">
+                                                <label for="radio_5"> <input id="radio15" name="nom3" type="radio" value="Totalmente de acuerdo" class="rad"/></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="marco">
+                                        <p class="labelc">Confuso</p>
+                                        <div id="Contenedor_4" name="Contenedor_4" class="pay contenedor">
+            
+                                            <div id="div_1" class="floatBlock2">
+                                                <label for="radio_1"> <input id="radio16" name="nom4" type="radio" value="Totalmente en desacuerdo" class="rad"/></label>
+                                            </div>
+            
+                                            <div id="div_2" class="floatBlock2">
+                                                <label for="radio_2"> <input id="radio17" name="nom4" type="radio" value="En desacuerdo" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_3" class="floatBlock2">
+                                                <label for="radio_3"> <input id="radio18" name="nom4" type="radio" value="Indeciso" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_4" class="floatBlock2">
+                                                <label for="radio_4"> <input id="radio19" name="nom4" type="radio" value="De acuerdo" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_5" class="floatBlock2">
+                                                <label for="radio_5"> <input id="radio20" name="nom4" type="radio" value="Totalmente de acuerdo" class="rad"/></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="marco">
+                                        <p class="labelc">Satisfecho</p>
+                                        <div id="Contenedor_5" name="Contenedor_5" class="pay contenedor">
+            
+                                            <div id="div_1" class="floatBlock2">
+                                                <label for="radio_1"> <input id="radio21" name="nom5" type="radio" value="Totalmente en desacuerdo" class="rad"/></label>
+                                            </div>
+            
+                                            <div id="div_2" class="floatBlock2">
+                                                <label for="radio_2"> <input id="radio22" name="nom5" type="radio" value="En desacuerdo" class="rad" /></label>
+                                            </div>
+
+                                            <div id="div_3" class="floatBlock2">
+                                                <label for="radio_3"> <input id="radio23" name="nom5" type="radio" value="Indeciso" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_4" class="floatBlock2">
+                                                <label for="radio_4"> <input id="radio24" name="nom5" type="radio" value="De acuerdo" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_5" class="floatBlock2">
+                                                <label for="radio_5"> <input id="radio25" name="nom5" type="radio" value="Totalmente de acuerdo" class="rad"/></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="marco">
+                                        <p class="labelc">Interesado</p>
+                                        <div id="Contenedor_6" name="Contenedor_6" class="pay contenedor">
+            
+                                            <div id="div_1" class="floatBlock2">
+                                                <label for="radio_1"> <input id="radio26" name="nom6" type="radio" value="Totalmente en desacuerdo" class="rad"/></label>
+                                            </div>
+            
+                                            <div id="div_2" class="floatBlock2">
+                                                <label for="radio_2"> <input id="radio27" name="nom6" type="radio" value="En desacuerdo" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_3" class="floatBlock2">
+                                                <label for="radio_3"> <input id="radio28" name="nom6" type="radio" value="Indeciso" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_4" class="floatBlock2">
+                                                <label for="radio_4"> <input id="radio29" name="nom6" type="radio" value="De acuerdo" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_5" class="floatBlock2">
+                                                <label for="radio_5"> <input id="radio30" name="nom6" type="radio" value="Totalmente de acuerdo" class="rad"/></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="marco">
+                                        <p class="labelc">Emocionado</p>
+                                        <div id="Contenedor_7" name="Contenedor_7" class="pay contenedor">
+            
+                                            <div id="div_1" class="floatBlock2">
+                                                <label for="radio_1"> <input id="radio31" name="nom7" type="radio" value="Totalmente en desacuerdo" class="rad"/></label>
+                                            </div>
+            
+                                            <div id="div_2" class="floatBlock2">
+                                                <label for="radio_2"> <input id="radio32" name="nom7" type="radio" value="En desacuerdo" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_3" class="floatBlock2">
+                                                <label for="radio_3"> <input id="radio33" name="nom7" type="radio" value="Indeciso" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_4" class="floatBlock2">
+                                                <label for="radio_4"> <input id="radio34" name="nom7" type="radio" value="De acuerdo" class="rad" /></label>
+                                            </div>
+
+                                            <div id="div_5" class="floatBlock2">
+                                                <label for="radio_5"> <input id="radio35" name="nom7" type="radio" value="Totalmente de acuerdo" class="rad" /></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="marco">
+                                        <p class="labelc">Encantado</p>
+                                        <div id="Contenedor_8" name="Contenedor_8" class="pay contenedor">
+            
+                                            <div id="div_1" class="floatBlock2">
+                                                <label for="radio_1"> <input id="radio36" name="nom8" type="radio" value="Totalmente en desacuerdo" class="rad" /></label>
+                                            </div>
+            
+                                            <div id="div_2" class="floatBlock2">
+                                                <label for="radio_2"> <input id="radio37" name="nom8" type="radio" value="En desacuerdo" class="rad"/></label>
+                                            </div>
+
+                                            <div id="div_3" class="floatBlock2">
+                                                <label for="radio_3"> <input id="radio38" name="nom8" type="radio" value="Indeciso" class="rad" /></label>
+                                            </div>
+
+                                            <div id="div_4" class="floatBlock2">
+                                                <label for="radio_4"> <input id="radio39" name="nom8" type="radio" value="De acuerdo" class="rad" /></label>
+                                            </div>
+
+                                            <div id="div_5" class="floatBlock2">
+                                                <label for="radio_5"> <input id="radio40" name="nom8" type="radio" value="Totalmente de acuerdo" class="rad" /></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <p class="text">
+                                        <p class="labelp">Detalla tu respuesta:</p>
+                                        <p class="labelin">
+                                            <textarea id="r9" name="nom9" rows="6" cols="80" class="tex"></textarea>   
+                                        </p>
+                                        <p class="labelp">2. ¿Sentiste algún tipo de molestia, física o mental, durante la <br>actividad? Detalla tu
+                                            respuesta</p>
+                                        <p class="labelin">
+                                            <textarea id="r10" name="nom10" rows="6" cols="80" class="tex"></textarea>
+                                        </p>
+                                        <p class="labelp">3. ¿Qué mejorarías de la actividad realizada?</p>
+                                        <p class="labelin">
+                                            <textarea id="r11" name="nom11" rows="6" cols="80" class="tex"></textarea>
+                                        </p>
+                                        <br>
+                                    </p>
+                    </form>           
+                </div>
+                <br>
+            </div>
+            <br>
+        </div>
+    </div>
+        <input type="Button" id="btnGuardar" class="botones" value="Guardar" onclick="procesar(6)">
+        <input type="Button" id="btnDescargar" class="botones" value="Descargar" onclick="descargar()">  
+</div>
+</div>
+
+</section>
+</div>
+<!--========================================================
+                          FOOTER
+=========================================================-->
+<footer id="footer" class="color_9">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <p class="info text_4 color_4">
+                    © <span id="copyright-year"></span> | ALBA DTI
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+<script src="js/almacenar.js"></script>
+<script src="js/run.js"></script>
+</body>
+</html>
